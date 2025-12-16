@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif; 
+    
+    background: linear-gradient(135deg, #969bae 5%, #dbb7ff 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+.ust-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 80px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 50px; 
+    transition: all 0.4s ease; 
+    z-index: 999; 
+    background-color: transparent; 
+}
+
+.logo { 
+    display: flex;
+     align-items: center;
+      gap: 15px; 
+      cursor: pointer; 
+    }
+.logo img { 
+    height: 95px; 
+    width: auto;
+ }
+.logo span {
+     font-size: 24px; 
+     font-weight: bold; 
+     color: rgb(0, 0, 0);
+      letter-spacing: 1px; 
+    }
+
+.linkler { 
+    list-style: none;
+     display: flex; 
+     gap: 30px;
+     }
+.linkler a { 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    font-size: 16px; 
+    font-weight: 500;
+     transition: 0.3s; 
+    }
+
+.linkler a:hover {
+    color: #6c5ce7; 
+}
+
+
+.ust-menu.aktif { 
+  background-color: rgb(255, 255, 255); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+.ust-menu.aktif .logo span { 
+    color: #000; 
+}
+.ust-menu.aktif .linkler a { 
+    color: #000;
+ }
+
+
+.hero-amac {
+    text-align: center;
+    padding: 120px 20px 80px 20px; 
+    
+    /* MAVİ YERİNE MOR GRADYAN */
+    background: linear-gradient(135deg, #988aff85, #c4c0ff);
+    
+    color: white;
+
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+}
+
+.hero-amac h1 { 
+    font-size: 48px; 
+    margin-bottom: 15px; 
+    font-weight: 700;
+ }
+.hero-amac p { 
+    font-size: 20px; 
+    max-width: 700px; 
+    margin: auto; 
+    opacity: 0.95;
+ }
+
+
+.bolum {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.bolum h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+
+    color: #4834d4; 
+}
+
+
+.bolum h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+
+    background: #6c5ce7; 
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.bolum p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222; 
+    max-width: 800px;
+    margin: auto;
+    font-weight: 500;
+}
+
+
+.satir {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.kutucuk {
+    
+    background: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(5px);
+    
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    
+
+    border-top: 5px solid #6c5ce7; 
+}
+
+.kutucuk:hover {
+    transform: translateY(-10px);
+   
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2); 
+}
+
+.kutucuk h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  
+    color: #4834d4; 
+}
+
+.kutucuk ul { list-style: none; padding: 0; margin: 0; }
+
+.kutucuk ul li {
+    font-size: 16px;
+    text-align: left;
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #444;
+}
+
+/* Tik işaretleri */
+.kutucuk ul li::before {
+    content: "✔";
+    /* TİK RENGİ MOR */
+    color: #6c5ce7; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+.alt-bilgi {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.footer-icerik h4 { 
+    margin-bottom: 10px;
+ }
+.footer-icerik p { 
+    color: #000; 
+    font-size: 0.5rem; 
+}
+.sosyal { 
+    margin: 15px 0;
+ }
+.sosyal a { 
+    margin: 0 10px; 
+    font-size: 1.5rem; 
+    color: #333; 
+    transition: 0.3s; }
+.sosyal a:hover {
+     color: #6c5ce7; 
+    }
+
+
+.menu-btn { 
+    display: none;
+     font-size: 2rem; 
+     cursor: pointer;
+      color: white; 
+    }
+.ust-menu.aktif .menu-btn { 
+    color: black;
+ }
+
+@media (max-width: 768px) {
+    .menu-btn { 
+        display: block;
+     }
+    .linkler {
+        position: fixed; 
+        top: 80px;
+         right: -100%;
+          width: 100%; 
+          height: calc(100vh - 80px);
+        background-color: white; 
+        flex-direction: column;
+         align-items: center; 
+         padding-top: 50px;
+          transition: 0.4s;
+    }
+    .linkler.acik { right: 0; }
+    .linkler a { color: black; }
+    .hero-amac h1 { font-size: 32px; }
+    .satir { flex-direction: column; align-items: center; }
+    .kutucuk { width: 90%; }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bize Ulaşın - Nitelikli Eğitim</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="ust-menu aktif"> 
+        <div class="logo">
+            <img src="img/logo.png" alt="Proje Logosu"> 
+            <span>NİTELİKLİ EĞİTİM</span>
+        </div>
+    
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="linkler">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="amacimiz.html">Amacımız</a></li>
+            <li><a href="neyapabiliriz.html">Ne Yapabiliriz?</a></li>
+            <li><a href="bizeulasin.html">Bize Ulaşın</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-alani">
+        <form action="/submit" method="post" aria-describedby="form-info">
+            <p id="form-info">
+                İletişim sayfasına Hoş Geldiniz! <br>
+                Bizimle İletişime Geçin:
+            </p>
+            
+            <div>
+                <label for="name">Ad-Soyad:</label><br>
+                <input type="text" id="name" name="ad_soyad" placeholder="Ad-Soyad" required><br><br>
+            </div>
+
+            <div>
+                <label for="email">E-Mail Adresiniz:</label><br>
+                <input type="email" id="email" name="email" placeholder="xxxx@gmail.com" required><br><br>
+            </div>  
+
+            <div> 
+                <label for="numara">İletişim Numaranız:</label><br>
+                <input type="tel" id="numara" name="telefon" placeholder="05xx xxx xxxx"><br><br>
+            </div>  
+
+            <div>
+                <label for="mesaj">Mesajınız:</label><br>
+                <textarea id="mesaj" name="mesaj" rows="4" placeholder="Bize iletmek istediklerinizi buraya yazın..." 
+                style="width: 100%; padding: 10px; margin-top: 5px; border: 2px solid #dcdde1; border-radius: 8px; font-family: Arial, sans-serif; resize: vertical;"></textarea>
+                <br><br>
+            </div>
+            <div style="margin-top: 5px;">
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">İletişim bilgilerimin alınmasına izin veriyorum.</label><br>
+            </div>
+            
+            <button type="submit">Gönder</button>
+         </form>
+    </section>
+
+    <footer class="alt-bilgi">
+        <div class="footer-icerik">
+            <h4>Nitelikli Eğitim Projesi</h4>
+            <p>Eğitimde eşitlik, erişilebilirlik ve fırsatlar.</p>
+     
+            <div class="sosyal">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+     
+            <p class="copy">&copy; 2025 | Tüm Hakları Saklıdır.</p>
+        </div>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
